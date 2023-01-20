@@ -93,7 +93,7 @@ class ExpressionParserTest {
     @Test
     fun `parse expression with parenthesis and spaces and negative numbers`() {
         // GIVEN
-        parser = ExpressionParser("1 * ( 2 / 3 ) + 4 - ( 5 % - 67 )")
+        parser = ExpressionParser("1 * ( 2 / 3 ) + 4 - ( 5 % (-67) )")
 
         // APPLY LOGIC
         val actual = parser.parse()
@@ -113,7 +113,10 @@ class ExpressionParserTest {
             ExpressionPart.Parenthesis(ParanthesesType.Open),
             ExpressionPart.Number(5.0),
             ExpressionPart.Op(Operation.PERCENT),
-            ExpressionPart.Number(-67.0),
+            ExpressionPart.Parenthesis(ParanthesesType.Open),
+            ExpressionPart.Op(Operation.SUBTRACT),
+            ExpressionPart.Number(67.0),
+            ExpressionPart.Parenthesis(ParanthesesType.Close),
             ExpressionPart.Parenthesis(ParanthesesType.Close)
         )
         assertThat(expected).isEqualTo(actual)
