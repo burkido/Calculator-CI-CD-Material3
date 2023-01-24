@@ -8,97 +8,97 @@ import com.project.calculator.domain.CalculatorAction
 import com.project.calculator.domain.Operation
 
 val calculatorActions = listOf(
-    CalculatorState(
+    CalculatorUiAction(
         text = "AC",
         highlightLevel = HighlightLevel.Highlighted,
         action = CalculatorAction.Clear
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "()",
         highlightLevel = HighlightLevel.SemiHighlighted,
         action = CalculatorAction.Parantheses
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "%",
         highlightLevel = HighlightLevel.SemiHighlighted,
         action = CalculatorAction.EnterOperation(Operation.PERCENT)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "÷",
         highlightLevel = HighlightLevel.SemiHighlighted,
         action = CalculatorAction.EnterOperation(Operation.DIVIDE)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "7",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(7)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "8",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(8)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "9",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(9)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "x",
         highlightLevel = HighlightLevel.SemiHighlighted,
         action = CalculatorAction.EnterOperation(Operation.MULTIPLY)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "4",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(4)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "5",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(5)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "6",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(6)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "-",
         highlightLevel = HighlightLevel.SemiHighlighted,
         action = CalculatorAction.EnterOperation(Operation.SUBTRACT)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "1",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(1)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "2",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(2)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "3",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(3)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "+",
         highlightLevel = HighlightLevel.SemiHighlighted,
         action = CalculatorAction.EnterOperation(Operation.ADD)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "0",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterNumber(0)
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = ".",
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.EnterDecimal
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = null,
         content = {
             Icon(
@@ -110,7 +110,7 @@ val calculatorActions = listOf(
         highlightLevel = HighlightLevel.Neutral,
         action = CalculatorAction.Delete
     ),
-    CalculatorState(
+    CalculatorUiAction(
         text = "=",
         highlightLevel = HighlightLevel.StronglyHighlighted,
         action = CalculatorAction.Calculate

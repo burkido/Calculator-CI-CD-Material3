@@ -3,7 +3,7 @@ package com.project.calculator.presentation
 import androidx.compose.runtime.Composable
 import com.project.calculator.domain.CalculatorAction
 
-data class CalculatorState(
+data class CalculatorUiAction(
     val text: String?,
     val highlightLevel: HighlightLevel,
     val action: CalculatorAction,
