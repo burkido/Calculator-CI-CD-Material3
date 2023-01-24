@@ -85,7 +85,7 @@ class ExpressionWriter {
      * We want to prevent something like this: 1+ or 1+2*
      * */
     private fun isCalculable(): String {
-        val newExpression = expression.takeLastWhile {
+        val newExpression = expression.dropLastWhile {
             it in "$operationSymbols(."
         }
 
