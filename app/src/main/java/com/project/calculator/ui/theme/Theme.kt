@@ -84,4 +84,15 @@ fun MaterialCalculatorTheme(
         shapes = Shapes,
         content = content
     )
+
+//    val systemUiController = rememberSystemUiController()
+//    val useDarkIcons = isSystemInDarkTheme()
+//    val statusBarColor = MaterialTheme.colorScheme.secondaryContainer
+//
+//    SideEffect {
+//        Log.d("MaterialCalculatorTheme", "statusBarColor: $statusBarColor.")
+//        systemUiController.statusBarDarkContentEnabled = false
+//        systemUiController.setStatusBarColor(statusBarColor, darkIcons = useDarkIcons)
+//    }
+
 }
